@@ -3,7 +3,8 @@ require 'rails/generators'
 class SessionGenerator < Rails::Generators::Base
   
   def create_session_model(name = '')
-    template "session.tt", "app/models/#{name}.rb" unless name.blank?
+    create_file "app/models/#{name.underscore}.rb"
+    template "session.tt", "app/models/#{name.underscore}.rb" unless name.blank?
   end
   
 end
