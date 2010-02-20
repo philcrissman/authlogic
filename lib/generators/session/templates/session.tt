@@ -1,0 +1,2 @@
+class <%= class_name.camelize %> < Authlogic::Session::Base
+end
