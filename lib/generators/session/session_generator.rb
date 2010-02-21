@@ -7,7 +7,6 @@ class SessionGenerator < Rails::Generators::NamedBase
   end
   
   def create_session_model
-    # create_file "app/models/#{@name.underscore}.rb"
     template "session.tt", "app/models/#{file_name.underscore}.rb"
   end
   
