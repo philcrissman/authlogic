@@ -2,7 +2,7 @@ require 'rails/generators'
 
 class SessionGenerator < Rails::Generators::Base
   
-  def initialize(args*)
+  def initialize(*args)
     @name = args[0]
   end
   
